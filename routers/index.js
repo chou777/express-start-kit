@@ -1,4 +1,3 @@
-var fs = require('fs');
 var path = require('path');
 var dbUser = require('../models/users.js');
 
@@ -13,6 +12,7 @@ function router(app) {
     } else {
       sess.views = 1;
     }
+
     // Get User
     dbUser.queryById(1, function(err, result) {
       if (err) {

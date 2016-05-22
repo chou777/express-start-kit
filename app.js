@@ -19,6 +19,9 @@ router(app);
 // Backend Router
 app.use('/admin', require(`./routers/backend`));
 
+// Set static file path
+app.use('/static', express.static(__dirname + '/public'));
+
 // Set template engine Jade
 app.set('views', './views');
 app.set('view engine', 'jade');

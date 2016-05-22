@@ -3,10 +3,14 @@ html(lang="en")
   head
     title= pageTitle
     script(type='text/javascript').
+    link(rel='stylesheet', href='static/css/style.css')
+    script(type='text/javascript', src='static/js/main.js')
+
 
   body
-    h1 Jade - node template engine
+    h1 Express Start kit
     #container.col
+      img(class='node-img', src='static/images/node.png')
       h3 My User.
       p= user.name
       p= user.mail
