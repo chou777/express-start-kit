@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+
+  body
+    h1 Jade - node template engine
+    #container.col
+      h3 My User.
+      p= user.name
+      p= user.mail
+      p session used Page view :
+        span= pageViews
