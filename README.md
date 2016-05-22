@@ -1,8 +1,9 @@
 ####Install
 nodemon 更改程式node 才會自動重啟用於開發時
+```
 npm install -g nodemon
 npm install
-
+```
 ####Start
 npm run serve
 
